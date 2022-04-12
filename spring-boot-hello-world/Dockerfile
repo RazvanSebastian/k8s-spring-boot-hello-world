@@ -5,7 +5,7 @@ RUN mkdir spring-app
 WORKDIR /spring-app
 
 # Set args
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=spring-boot-hello-world/target/*.jar
 
 # Copy jar into workdir
 COPY ${JAR_FILE} app.jar
